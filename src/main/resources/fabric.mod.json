@@ -20,6 +20,12 @@
 		],
 		"client": [
 			"com.kirk.targetpoint.TargetPointClient"
+		],
+		"manager": [
+			"com.kirk.targetpoint.TargetPointManager"
+		],
+		"data": [
+			"com.kirk.targetpoint.TargetPointData"
 		]
 	},
 	"mixins": [
