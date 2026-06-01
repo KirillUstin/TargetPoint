@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.kirk.targetpoint.TargetPoint"
+		],
+		"client": [
+			"com.kirk.targetpoint.TargetPointClient"
 		]
 	},
 	"mixins": [
