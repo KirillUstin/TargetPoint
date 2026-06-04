@@ -6,6 +6,8 @@ public class TargetPointData {
     private double Z;
     private String name;
 
+    public TargetPointData() {}
+
     public TargetPointData(double x, double y, double z, String n){
         this.X = x;
         this.Y = y;
