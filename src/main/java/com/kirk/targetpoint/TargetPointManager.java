@@ -29,16 +29,21 @@ public class TargetPointManager {
         savePoints();
     }
 
-    public boolean removePoint(String target){
-        for(int i = 0; i < points.size(); i++){
-            if(points.get(i).getName().equals(target)){
-                points.remove(i);
-                savePoints();
-                return true;
-            }
-        }
+    public void removePoint(TargetPointData point){
+        points.remove(point);
+        savePoints();
+    }
 
-        return false;
+    public void updatePoint(TargetPointData point, String newName){
+        if(point != null){
+            point.setName(newName);
+        }
+        savePoints();
+    }
+
+    public void removeAllPoint(){
+        points.removeAll(points);
+        savePoints();
     }
 
     private Path getSaveFile() {
