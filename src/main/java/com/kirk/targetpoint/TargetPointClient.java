@@ -10,7 +10,7 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.text.Text;
 
 public class TargetPointClient implements ClientModInitializer {
-    public static final String SETTING_CATEGORY = "category.targetpoint.general";
+    public static final String SETTING_CATEGORY = "Target Point settings";
 
     private static KeyBinding menuKey;
 
@@ -23,7 +23,7 @@ public class TargetPointClient implements ClientModInitializer {
             manager.loadPoints();
         });
 
-        menuKey = new KeyBinding("key.targetpoint.open_menu", GLFW.GLFW_KEY_K, SETTING_CATEGORY);
+        menuKey = new KeyBinding("Open Menu", GLFW.GLFW_KEY_K, SETTING_CATEGORY);
 
         KeyBindingHelper.registerKeyBinding(menuKey);
         
